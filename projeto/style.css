@@ -65,10 +65,18 @@ header{
     font-family: "Bebas Neue", sans-serif;
 }
 
+.direita {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-right: 25px;
+}
+
 /* ESTRELAS */
 
 .direita img{
-    width: 65px;
+    width: 50px;
     height: auto;
 }
 
@@ -557,89 +565,90 @@ header{
 
 .estatisticas {
     width: 100%;
-    padding: 90px 8%;
+    background-color: #FFCC00;
+    padding: 70px 20px 90px;
+
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
     gap: 180px;
     flex-wrap: wrap;
-    background: #FFCC00;
+
+    font-family: "Poppins", sans-serif;
 }
 
 .card_estatistica {
+    width: 200px;
+
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+    color: #17218f;
 
     transition: 0.4s;
-
     cursor: pointer;
 }
 
-.card_estatistica:hover {
-    transform: translateY(-15px) scale(1.05);
-}
-
-/* ÍCONES */
-
 .card_estatistica i {
     font-size: 6rem;
-
     color: #17218f;
-
     margin-bottom: 25px;
-
     transition: 0.4s;
 }
 
-.card_estatistica:hover i {
-    transform: scale(1.1);
-}
-
-/* NÚMEROS */
-
 .card_estatistica h2 {
     font-size: 2.7rem;
-
-    color: #17218f;
-
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
-
-/* TEXTO */
 
 .card_estatistica p {
     font-size: 2rem;
-
-    color: #17218f;
-
-    font-weight: 600;
-
-    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
 }
+
+.card_estatistica:hover {
+    transform: translateY(-12px) scale(1.05);
+}
+
+.card_estatistica:hover i {
+    transform: scale(1.12);
+}
+
+/* FOOTER */
 
 .footer {
     width: 100%;
-
-    background: #061f9f;
+    background-color: #061f9f;
 
     padding: 45px 20px;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
+
+    text-align: center;
+
+    margin-top: 20px;
 }
 
 .footer p {
     color: white;
 
+    font-family: "Poppins", sans-serif;
     font-size: 1.3rem;
-
     font-weight: 600;
 
-    text-align: center;
+    margin: 0;
+
+    transition: 0.3s;
+}
+
+.footer p:hover {
+    color: #FFCC00;
 }
