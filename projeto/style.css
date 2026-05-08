@@ -9,7 +9,7 @@ body{
 header{
     background-color: #126E3F;
     width: 100%;
-    height: 120px;
+    height: 90px;
 
     display: flex;
     align-items: center;
@@ -47,10 +47,10 @@ header{
     background-color: rgb(50, 100, 192);
 
     width: 200px;
-    height: 70px;
+    height: 50px;
 
     border-radius: 15px;
-    border: 4px solid black;
+    border: 4px solid rgb(50, 100, 192);;
     transition: background-color 0.5s ease;
     cursor: pointer;
 
@@ -65,11 +65,45 @@ header{
     font-family: "Bebas Neue", sans-serif;
 }
 
+.direita {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-right: 25px;
+}
+
+/* ESTRELAS */
 
 .direita img{
-    width: 400px;
+    width: 50px;
     height: auto;
 }
+
+.estrela58:hover{
+    transform: scale(1.2);
+}
+
+.estrela58:hover{
+    transform: scale(1.2);
+}
+
+.estrela62:hover{
+    transform: scale(1.2);
+}
+
+.estrela70:hover{
+    transform: scale(1.2);
+}
+
+.estrela94:hover{
+    transform: scale(1.2);
+}
+
+.estrela02:hover{
+    transform: scale(1.2);
+}
+
 
 .banner{
     width: 100%;
@@ -360,7 +394,7 @@ header{
 }
 
 .logos_patrocinio img {
-    height: 40px; 
+    height: 70px; 
     width: auto;  
     filter: none;
     opacity: 1;   
@@ -389,4 +423,232 @@ header{
 .camisa-away:hover{
     transform: scale(1.20) rotate(2deg); 
     
+}
+
+/* HISTÓRIA */
+.historia {
+    background-color: #FFCC00; 
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.secao_historia {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.subtitulo_historia {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #009c3b;
+    font-weight: 500;
+    margin-top: -40px;
+    margin-bottom: 70px;
+}
+
+/* CARDS */
+
+.card_pele {
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: 0.04s;
+
+    cursor: pointer;
+}
+
+.card_neymar {
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: 0.04s;
+
+    cursor: pointer;
+}
+
+.card_ronaldo {
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: 0.04s;
+
+    cursor: pointer;
+}
+
+.card_pele:hover{
+    transform: translateY(-18px) scale(1.04);
+}
+
+.card_neymar:hover{
+    transform: translateY(-18px) scale(1.04);
+}
+
+.card_ronaldo:hover{
+    transform: translateY(-18px) scale(1.04);
+}
+
+/* iMAGENS */
+.img_pele {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    transition: 0.4s;
+    filter: drop-shadow(0 20px 18px rgba(0,0,0,0.28));
+}
+
+.img_neymar {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    transition: 0.4s;
+    filter: drop-shadow(0 20px 18px rgba(0,0,0,0.28));
+}
+
+.img_ronaldo {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    transition: 0.4s;
+    filter: drop-shadow(0 20px 18px rgba(0,0,0,0.28));
+}
+
+.card_pele:hover .img_pele{
+    filter: drop-shadow(0 28px 22px rgba(0, 39, 118, 0.35));
+}
+
+.card_neymar:hover .img_neymar{
+    filter: drop-shadow(0 28px 22px rgba(0, 39, 118, 0.35));
+}
+
+.card_ronaldo:hover .img_ronaldo{
+    filter: drop-shadow(0 28px 22px rgba(0, 39, 118, 0.35));
+}
+
+.jogadores {
+    margin-top: 10px;
+    font-size: 3rem;
+    color: #17218f;
+    font-weight: 700;
+}
+
+.gols {
+    font-size: 2rem;
+    color: #002776;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+/* ESTATÍSTICAS */
+
+.estatisticas {
+    width: 100%;
+    background-color: #FFCC00;
+    padding: 70px 20px 90px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 180px;
+    flex-wrap: wrap;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.card_estatistica {
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+    color: #17218f;
+
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card_estatistica i {
+    font-size: 6rem;
+    color: #17218f;
+    margin-bottom: 25px;
+    transition: 0.4s;
+}
+
+.card_estatistica h2 {
+    font-size: 2.7rem;
+    margin-bottom: 12px;
+}
+
+.card_estatistica p {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.card_estatistica:hover {
+    transform: translateY(-12px) scale(1.05);
+}
+
+.card_estatistica:hover i {
+    transform: scale(1.12);
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background-color: #061f9f;
+
+    padding: 45px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.footer p {
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    margin: 0;
+
+    transition: 0.3s;
+}
+
+.footer p:hover {
+    color: #FFCC00;
 }
