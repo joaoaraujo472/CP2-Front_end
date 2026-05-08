@@ -553,3 +553,93 @@ header{
     margin-top: 12px;
 }
 
+/* ESTATÍSTICAS */
+
+.estatisticas {
+    width: 100%;
+    padding: 90px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+    flex-wrap: wrap;
+    background: #FFCC00;
+}
+
+.card_estatistica {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    transition: 0.4s;
+
+    cursor: pointer;
+}
+
+.card_estatistica:hover {
+    transform: translateY(-15px) scale(1.05);
+}
+
+/* ÍCONES */
+
+.card_estatistica i {
+    font-size: 6rem;
+
+    color: #17218f;
+
+    margin-bottom: 25px;
+
+    transition: 0.4s;
+}
+
+.card_estatistica:hover i {
+    transform: scale(1.1);
+}
+
+/* NÚMEROS */
+
+.card_estatistica h2 {
+    font-size: 2.7rem;
+
+    color: #17218f;
+
+    margin-bottom: 8px;
+}
+
+/* TEXTO */
+
+.card_estatistica p {
+    font-size: 2rem;
+
+    color: #17218f;
+
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+
+    background: #061f9f;
+
+    padding: 45px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+
+    font-size: 1.3rem;
+
+    font-weight: 600;
+
+    text-align: center;
+}
